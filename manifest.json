@@ -1,0 +1,545 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/a/1/s/docfx",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Coral.Web.Pages.ErrorModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Coral.Web.Pages.ErrorModel.html",
+          "hash": "jJjm+wjui1q1cN1tngxKUJHpMNSndX6hp9ij2J/7ArU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Coral.Web.Pages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Coral.Web.Pages.html",
+          "hash": "VOASOyNsAXPxjy12z49welMZtls5djbkXW3OoVfVPXU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Coral.Web.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Coral.Web.Program.html",
+          "hash": "Q6PJlTrQjgXgkh5aiG54Yw0il8v/gFwxqr466f2uHDM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Coral.Web.Startup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Coral.Web.Startup.html",
+          "hash": "qIMlWa48NpqAWDXqnaHulE0MGI4cmErGSBMM6CcRSLY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Coral.Web.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Coral.Web.html",
+          "hash": "pLKAew05JsoSaZKK8uv9BTD80r/q2e1fAv32m6OMnWM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IdentityServerHost.Quickstart.UI.AccountController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IdentityServerHost.Quickstart.UI.AccountController.html",
+          "hash": "P4yQcWbuz9rn98sH9ejLwQRIPfub23G6VhwaaNpu7Po="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IdentityServerHost.Quickstart.UI.AccountOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IdentityServerHost.Quickstart.UI.AccountOptions.html",
+          "hash": "lmvUuOxS+xV5bLtqUhoS8gDzyXmeoK0Q+mSbIaKaNh4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IdentityServerHost.Quickstart.UI.ConsentController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IdentityServerHost.Quickstart.UI.ConsentController.html",
+          "hash": "v8e41tEIl29fETezG7T1hBy5Rh+Epp5oM8cXzZ7ycGk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IdentityServerHost.Quickstart.UI.ConsentInputModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IdentityServerHost.Quickstart.UI.ConsentInputModel.html",
+          "hash": "z8T1/FTRdjSCrA0KuW3E4m2/XIx21FfAoI1ZAhWAlh4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IdentityServerHost.Quickstart.UI.ConsentOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IdentityServerHost.Quickstart.UI.ConsentOptions.html",
+          "hash": "pkXdUJRG1NfSWTh+Vl4LitCUn2pm1pVVSr8snNF4JlQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IdentityServerHost.Quickstart.UI.ConsentViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IdentityServerHost.Quickstart.UI.ConsentViewModel.html",
+          "hash": "G7sbi5nm7wuR/ICYuYG4NF3thN1Bm28AZvnOoR3EwsI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IdentityServerHost.Quickstart.UI.DeviceAuthorizationInputModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IdentityServerHost.Quickstart.UI.DeviceAuthorizationInputModel.html",
+          "hash": "I1Ss1qvIu42r7r5E+g+XRMFtLub0fQZtad86kEjASEY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IdentityServerHost.Quickstart.UI.DeviceAuthorizationViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IdentityServerHost.Quickstart.UI.DeviceAuthorizationViewModel.html",
+          "hash": "a+QUHAL9Qp0npy54Us247NkJt69MabZc5At7yu6F07E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IdentityServerHost.Quickstart.UI.DeviceController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IdentityServerHost.Quickstart.UI.DeviceController.html",
+          "hash": "8WLWZKKZPJ/Uje0Ni7StlekgMeiYCPST/I3C5Bhjfkc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IdentityServerHost.Quickstart.UI.DiagnosticsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IdentityServerHost.Quickstart.UI.DiagnosticsController.html",
+          "hash": "dYZpqOl494YPTWfaDlauogFbUAf8LCfwsT6Ok6ecx80="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IdentityServerHost.Quickstart.UI.DiagnosticsViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IdentityServerHost.Quickstart.UI.DiagnosticsViewModel.html",
+          "hash": "vS2K1ifAb2Br+VUVW3lXkJLHq/PLcrKu0IqeQSaMpSY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IdentityServerHost.Quickstart.UI.ErrorViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IdentityServerHost.Quickstart.UI.ErrorViewModel.html",
+          "hash": "PywevSHzHdMutMI+wzTnPVXS8XXHsQqSkGyZ7pcFSLI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IdentityServerHost.Quickstart.UI.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IdentityServerHost.Quickstart.UI.Extensions.html",
+          "hash": "VDX5cFl2mamBj4szgmqeeDUGHSq8QgmRsQAuqNjSMe8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IdentityServerHost.Quickstart.UI.ExternalController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IdentityServerHost.Quickstart.UI.ExternalController.html",
+          "hash": "LIu0W/z6pNmJiQje8zN/7+ozl5EOKXnbfDaEOcQQvUI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IdentityServerHost.Quickstart.UI.ExternalProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IdentityServerHost.Quickstart.UI.ExternalProvider.html",
+          "hash": "IQVs9jc+Cf/bff7EOFvXcVqqLPT0RkLsdA9chhbr16U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IdentityServerHost.Quickstart.UI.GrantViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IdentityServerHost.Quickstart.UI.GrantViewModel.html",
+          "hash": "pRY/ZU1Se49HIl4C5trLQ1ZB++kPPO1KGiF0LJfpAUE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IdentityServerHost.Quickstart.UI.GrantsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IdentityServerHost.Quickstart.UI.GrantsController.html",
+          "hash": "yXgLXJQSTopJzdjrKiomoml9FqHF13oub2mW3ed2V1w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IdentityServerHost.Quickstart.UI.GrantsViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IdentityServerHost.Quickstart.UI.GrantsViewModel.html",
+          "hash": "hUCDOVIxGr2jW+JkLmKReMPj9somC5dwproBcSu5JyU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IdentityServerHost.Quickstart.UI.HomeController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IdentityServerHost.Quickstart.UI.HomeController.html",
+          "hash": "SCLuBhQyOHvNptJlYsHVST22Zo/hwStpIEZWgzFPnmQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IdentityServerHost.Quickstart.UI.LoggedOutViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IdentityServerHost.Quickstart.UI.LoggedOutViewModel.html",
+          "hash": "2evbZM4XkuDXF7JfVx3ohV6qBhGwe3TZwYL9KtiTrso="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IdentityServerHost.Quickstart.UI.LoginInputModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IdentityServerHost.Quickstart.UI.LoginInputModel.html",
+          "hash": "1CU2pR1xXRF6B2Ksb//7IhdfWb9gRepgajKH99upkt8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IdentityServerHost.Quickstart.UI.LoginViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IdentityServerHost.Quickstart.UI.LoginViewModel.html",
+          "hash": "K4w53G2fvgQ+zehh2v89SRRC91eZwUW73efkHpsdxM4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IdentityServerHost.Quickstart.UI.LogoutInputModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IdentityServerHost.Quickstart.UI.LogoutInputModel.html",
+          "hash": "6bRsGwfDpmgMMnQVZW/MYSQOpkp/2qJdaBtf/XBwUGk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IdentityServerHost.Quickstart.UI.LogoutViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IdentityServerHost.Quickstart.UI.LogoutViewModel.html",
+          "hash": "TVy9WqwzKJXmp2DUPjyODdEE01AShRnNvUKn6KOyVq4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IdentityServerHost.Quickstart.UI.ProcessConsentResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IdentityServerHost.Quickstart.UI.ProcessConsentResult.html",
+          "hash": "KOPvfjphH5N5C4uIs0ZCWi6dVcRbFGqre8l98TRcjXU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IdentityServerHost.Quickstart.UI.RedirectViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IdentityServerHost.Quickstart.UI.RedirectViewModel.html",
+          "hash": "Ls63NZ09c6mqSZGrNvqouhy1BfQxx4tGMJBuZKJK5MY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IdentityServerHost.Quickstart.UI.ScopeViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IdentityServerHost.Quickstart.UI.ScopeViewModel.html",
+          "hash": "isqYKXdW3Vw8XIx0tZa8qtMwXyvmJCw0tTrSI2af4xk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IdentityServerHost.Quickstart.UI.SecurityHeadersAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IdentityServerHost.Quickstart.UI.SecurityHeadersAttribute.html",
+          "hash": "UxHoyjOHj+gbvOL6tz+AwtAKGWbQs35fVdUtjCVrpdY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IdentityServerHost.Quickstart.UI.TestUsers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IdentityServerHost.Quickstart.UI.TestUsers.html",
+          "hash": "IXrw22zcJGDjEFCvKagmWPKsBHDC/StCk2fcdmefLB4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IdentityServerHost.Quickstart.UI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IdentityServerHost.Quickstart.UI.html",
+          "hash": "65WHAmeFO7Q7GyDoLTY+QtqvNWn72AaayeCtkgjvhSw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "9nRqeaRohSRKroHs7eVB2ijCUkMV0nP5YXqG8h8xWNU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "dajSEgtAs/v7CK5L21qL4vHgTdyUv0J7McsQOIiZpLA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "AJ9QqLicvYy/r/3ODEUNFUynaF4GFbJsK6C0+dKBYFA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "VSUNe0DnRrJskQjf5KeVbulTYY/O1yBUxZdSLayCXDI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 2,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 35,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
