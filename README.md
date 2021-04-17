@@ -1,8 +1,8 @@
 # CG.Coral: 
 ---
-[![Build Status](https://dev.azure.com/codegator/CG.Coral/_apis/build/status/CodeGator.CG.Coral?branchName=master)](https://dev.azure.com/codegator/CG.Coral/_build/latest?definitionId=300&branchName=master)
+[![Build Status](https://dev.azure.com/codegator/CG.Coral/_apis/build/status/CodeGator.CG.Coral?branchName=main)](https://dev.azure.com/codegator/CG.Coral/_build/latest?definitionId=47&branchName=main)
 [![Github docs](https://img.shields.io/static/v1?label=Documentation&message=online&color=blue)](https://codegator.github.io/CG.Coral/index.html)
-![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.Coral/300)
+![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.Coral/47)
 [![Github discussion](https://img.shields.io/badge/Discussion-online-blue)](https://github.com/CodeGator/CG.Coral/discussions)
 
 #### What does it do?
