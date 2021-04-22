@@ -37,9 +37,22 @@ namespace CG.Coral.Web
                     RequirePkce = true,
                     AllowOfflineAccess = true,
                     ClientSecrets = new List<Secret> {new Secret("3DFC0E24-A141-4181-BFAD-10ADF2709550".Sha256())},
-                    AllowedScopes = new List<string> { "openid", "profile", "email", "api1.read", "api1.write" },
+                    AllowedScopes = new List<string> { "openid", "profile", "email", "oliveapi.read", "oliveapi.write" },
                     RedirectUris = { "https://localhost:5005/signin-oidc" },
                     PostLogoutRedirectUris = { "https://localhost:5005/signout-oidc" }
+                },
+                new Client
+                {
+                    ClientId = "4D0880B4-174E-4C88-99BA-0CED9004970F",
+                    ClientName = "CG.Beryl.Web",
+                    AllowedGrantTypes = GrantTypes.CodeAndClientCredentials,
+                    RequireConsent = false,
+                    RequirePkce = true,
+                    AllowOfflineAccess = true,
+                    ClientSecrets = new List<Secret> {new Secret("ACA4D701-F8F2-4E34-BC84-1E68FF2597F2".Sha256())},
+                    AllowedScopes = new List<string> { "openid", "profile", "email", "berylapi.read", "berylapi.write" },
+                    RedirectUris = { "https://localhost:5008/signin-oidc" },
+                    PostLogoutRedirectUris = { "https://localhost:5008/signout-oidc" }
                 }
             };
         }
@@ -65,11 +78,20 @@ namespace CG.Coral.Web
             {
                 new ApiResource
                 {
-                    Name = "api1",
-                    DisplayName = "API #1",
-                    Description = "Allow the application to access API #1 on your behalf",
-                    Scopes = new List<string> {"api1.read", "api1.write"},
+                    Name = "oliveapi",
+                    DisplayName = "CG.Olive API",
+                    Description = "Allow the application to access CG.Olive API on your behalf",
+                    Scopes = new List<string> {"oliveapi.read", "oliveapi.write"},
                     ApiSecrets = new List<Secret> {new Secret("D3820CE6-1C5A-455D-9A36-AE1D87CB01C3".Sha256())},
+                    UserClaims = new List<string> {"role", "name", "email"}
+                },
+                new ApiResource
+                {
+                    Name = "berylapi",
+                    DisplayName = "CG.Beryl API",
+                    Description = "Allow the application to access CG.Beryl API on your behalf",
+                    Scopes = new List<string> {"berylapi.read", "berylapi.write"},
+                    ApiSecrets = new List<Secret> {new Secret("AD16A903-A6CA-4EB4-AE78-1D4484D1E442".Sha256())},
                     UserClaims = new List<string> {"role", "name", "email"}
                 }
             };
@@ -79,8 +101,10 @@ namespace CG.Coral.Web
         {
             return new[]
             {
-                new ApiScope("api1.read", "Read Access to API #1"),
-                new ApiScope("api1.write", "Write Access to API #1")
+                new ApiScope("berylapi.read", "Read Access to CG.Beryl API"),
+                new ApiScope("berylapi.write", "Write Access to CG.Beryl API"),
+                new ApiScope("oliveapi.read", "Read Access to CG.Olive API"),
+                new ApiScope("oliveapi.write", "Write Access to CG.Olive API")
             };
         }
     }

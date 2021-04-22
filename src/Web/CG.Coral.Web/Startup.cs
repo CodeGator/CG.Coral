@@ -1,69 +1,106 @@
+using CG.Validations;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
+using MudBlazor.Services;
 
 namespace CG.Coral.Web
 {
+    /// <summary>
+    /// This class contains startup logic for the server.
+    /// </summary>
     public class Startup
     {
+        // *******************************************************************
+        // Properties.
+        // *******************************************************************
+
+        #region Properties
+
+        /// <summary>
+        /// This property contains the configuration for the server.
+        /// </summary>
+        public IConfiguration Configuration { get; }
+
+        #endregion
+
+        // *******************************************************************
+        // Constructors.
+        // *******************************************************************
+
+        #region Constructors
+
+        /// <summary>
+        /// This constructor creates a new instance of the <see cref="Startup"/>
+        /// class.
+        /// </summary>
+        /// <param name="configuration">The configuration to use for the operation.</param>
         public Startup(IConfiguration configuration)
         {
+            // Validate the parameters before attempting to use them.
+            Guard.Instance().ThrowIfNull(configuration, nameof(configuration));
+
+            // Save the references.
             Configuration = configuration;
         }
 
-        public IConfiguration Configuration { get; }
+        #endregion
 
-        // This method gets called by the runtime. Use this method to add services to the container.
-        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
-        public void ConfigureServices(IServiceCollection services)
+        // *******************************************************************
+        // Public methods.
+        // *******************************************************************
+
+        #region Public methods
+
+        /// <summary>
+        /// This method is called to configure services with the DI container.
+        /// </summary>
+        /// <param name="services">The service collection to use for the operation.</param>
+        public void ConfigureServices(
+            IServiceCollection services
+            )
         {
-            services.AddIdentityServer(options => 
-            {
-                options.Events.RaiseErrorEvents = true;
-                options.Events.RaiseInformationEvents = true;
-                options.Events.RaiseFailureEvents = true;
-                options.Events.RaiseSuccessEvents = true;
-            }).AddInMemoryClients(IS4Config.Clients())
-              .AddInMemoryIdentityResources(IS4Config.IdentityResources())
-              .AddInMemoryApiResources(IS4Config.ApiResources())
-              .AddInMemoryApiScopes(IS4Config.ApiScopes())
-              .AddTestUsers(IS4Config.Users())
-              .AddDeveloperSigningCredential();
+            // Add the custom logging.
+            services.AddLogging(
+                Configuration.GetSection("Logging")
+                );
 
-            services.AddRazorPages();
-            services.AddServerSideBlazor();
-            services.AddControllersWithViews();
+            // Add identity services.
+            services.AddCustomIdentity(
+                Configuration.GetSection("Identity")
+                );
+
+            // Add our custom services.
+            services.AddCustomServices(
+                Configuration.GetSection("Services")
+                );
+
+            // Add custom Blazor.
+            services.AddCustomBlazor(
+                Configuration
+                );            
+
+            // Add MudBlazor services.
+            services.AddMudServices();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        // *******************************************************************
+
+        /// <summary>
+        /// This method is called to configure the web application.
+        /// </summary>
+        /// <param name="app">The application builder to use for the operation.</param>
+        /// <param name="env">The runtime environment to use for the operation.</param>
+        public void Configure(
+            IApplicationBuilder app, 
+            IWebHostEnvironment env
+            )
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-            else
-            {
-                app.UseExceptionHandler("/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
-            }
-
-            app.UseHttpsRedirection();
-            app.UseStaticFiles();
-
-            app.UseRouting();
-            app.UseIdentityServer();
-            app.UseAuthorization();
-
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapBlazorHub();
-                endpoints.MapFallbackToPage("/_Host");
-                endpoints.MapDefaultControllerRoute();
-            });
+            // Use custom Blazor.
+            app.UseCustomBlazor(env);
         }
+
+        #endregion
     }
 }

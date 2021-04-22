@@ -1,26 +1,42 @@
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace CG.Coral.Web
 {
+    /// <summary>
+    /// This class contains the main program logic.
+    /// </summary>
     public class Program
     {
+        // *******************************************************************
+        // Public methods.
+        // *******************************************************************
+
+        #region Public methods
+
+        /// <summary>
+        /// This method is the main entry point for the process.
+        /// </summary>
+        /// <param name="args">Optional command line arguments</param>
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
         }
 
+        // *******************************************************************
+
+        /// <summary>
+        /// This method returns a host builder.
+        /// </summary>
+        /// <param name="args">Optional command line arguments</param>
+        /// <returns>An <see cref="IHostBuilder"/> instance.</returns>
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
                 });
+
+        #endregion
     }
 }

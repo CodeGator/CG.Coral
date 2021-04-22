@@ -1,17 +1,68 @@
 ﻿@inherits LayoutComponentBase
+@inject TokenProvider TokenProvider
 
-<div class="page">
-    <div class="sidebar">
+<MudThemeProvider />
+@*<MudDialogProvider /> I get 2 of every dialog if I uncomment this *@
+<MudSnackbarProvider />
+
+<MudLayout>
+    <MudAppBar Elevation="0">
+        <MudIconButton Icon="@Icons.Material.Filled.Menu"
+                       Color="Color.Inherit"
+                       Edge="Edge.Start"
+                       OnClick="@((e) => DrawerToggle())" />
+        <MudAppBarSpacer />
+        <AuthorizeView>
+            <Authorized>
+                <MudButton Variant="Variant.Text" Color="Color.Inherit">
+                    @(context.User.GetEmail())
+                </MudButton>
+                <form method="post" action="/Account/Logout">
+                    <input name="__RequestVerificationToken" type="hidden" value="@TokenProvider.XsrfToken">
+                    <button type="submit" class="nav-link btn btn-link">Log out</button>
+                </form>
+            </Authorized>
+            <NotAuthorized>
+                <MudButton Link="/Account/Login"
+                           Variant="Variant.Text"
+                           EndIcon="@Icons.Outlined.Login"
+                           Color="Color.Inherit">
+                    Log in
+                </MudButton>
+            </NotAuthorized>
+        </AuthorizeView>
+        &nbsp;
+        <MudIconButton Icon="@Icons.Custom.Brands.GitHub"
+                       Color="Color.Inherit"
+                       Size="Size.Large"
+                       Link="https://github.com/codegator/CG.Olive"
+                       Target="_blank" />
+    </MudAppBar>
+    <MudDrawer @bind-Open="_drawerOpen" Elevation="1">
+        <MudDrawerHeader>
+            <MudText Typo="Typo.h6">@typeof(MainLayout).Assembly.ReadTitle()</MudText>
+        </MudDrawerHeader>
         <NavMenu />
-    </div>
+    </MudDrawer>
+    <MudMainContent Style="padding-bottom: 34px; height: 100vh;">
+        @Body
+        <MudAppBar Elevation="1"
+                   Style="top: auto; bottom: 0; background-color: gray">
+            <p class="small">Copyright &copy; 2018 - @DateTime.Today.Year by CODEGATOR. All rights reserved</p>
+        </MudAppBar>
+    </MudMainContent>
+</MudLayout>
 
-    <div class="main">
-        <div class="top-row px-4">
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
-        </div>
+@code {
+    private bool _drawerOpen = true;
+    private void DrawerToggle()
+    {
+        _drawerOpen = !_drawerOpen;
+    }
+}
 
-        <div class="content px-4">
-            @Body
-        </div>
-    </div>
-</div>
+<style>
+    .nav-link, .nav-link:hover {
+        color: white;
+    }
+</style>
