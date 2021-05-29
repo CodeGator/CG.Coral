@@ -53,6 +53,19 @@ namespace CG.Coral.Web
                     AllowedScopes = new List<string> { "openid", "profile", "email", "berylapi.read", "berylapi.write" },
                     RedirectUris = { "https://localhost:5008/signin-oidc" },
                     PostLogoutRedirectUris = { "https://localhost:5008/signout-oidc" }
+                },
+                new Client
+                {
+                    ClientId = "1D98140B-0C29-47C3-92FE-110E393AC75F",
+                    ClientName = "CG.Obsidian.Web",
+                    AllowedGrantTypes = GrantTypes.CodeAndClientCredentials,
+                    RequireConsent = false,
+                    RequirePkce = true,
+                    AllowOfflineAccess = true,
+                    ClientSecrets = new List<Secret> {new Secret("EAC5C954-94D7-4FFC-8296-6BF1D09261BD".Sha256())},
+                    AllowedScopes = new List<string> { "openid", "profile", "email", "obsidianapi.read", "obsidianapi.write" },
+                    RedirectUris = { "https://localhost:5011/signin-oidc" },
+                    PostLogoutRedirectUris = { "https://localhost:5011/signout-oidc" }
                 }
             };
         }
@@ -93,6 +106,15 @@ namespace CG.Coral.Web
                     Scopes = new List<string> {"berylapi.read", "berylapi.write"},
                     ApiSecrets = new List<Secret> {new Secret("AD16A903-A6CA-4EB4-AE78-1D4484D1E442".Sha256())},
                     UserClaims = new List<string> {"role", "name", "email"}
+                },
+                new ApiResource
+                {
+                    Name = "obsidianapi",
+                    DisplayName = "CG.Obsidian API",
+                    Description = "Allow the application to access CG.Obsidian API on your behalf",
+                    Scopes = new List<string> { "obsidianapi.read", "obsidianapi.write"},
+                    ApiSecrets = new List<Secret> {new Secret("C0795EDB-767C-4E04-A2AF-B027A79B2272".Sha256())},
+                    UserClaims = new List<string> {"role", "name", "email"}
                 }
             };
         }
@@ -104,7 +126,9 @@ namespace CG.Coral.Web
                 new ApiScope("berylapi.read", "Read Access to CG.Beryl API"),
                 new ApiScope("berylapi.write", "Write Access to CG.Beryl API"),
                 new ApiScope("oliveapi.read", "Read Access to CG.Olive API"),
-                new ApiScope("oliveapi.write", "Write Access to CG.Olive API")
+                new ApiScope("oliveapi.write", "Write Access to CG.Olive API"),
+                new ApiScope("obsidianapi.read", "Read Access to CG.Obsidian API"),
+                new ApiScope("obsidianapi.write", "Write Access to CG.Obsidian API")
             };
         }
     }
