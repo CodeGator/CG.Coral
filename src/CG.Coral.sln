@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31025.218
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CG.Coral.Web", "Web\CG.Coral.Web\CG.Coral.Web.csproj", "{89F5CEA8-E1FC-4053-96C9-6C423C26B0D5}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "30. Web", "30. Web", "{E3E5D769-660E-4029-989D-B120C00227FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CG.Coral.Web", "CG.Coral.Web\CG.Coral.Web.csproj", "{89F5CEA8-E1FC-4053-96C9-6C423C26B0D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,9 +18,6 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{89F5CEA8-E1FC-4053-96C9-6C423C26B0D5} = {E3E5D769-660E-4029-989D-B120C00227FF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {74CC2C48-7749-4FF3-8792-85217C61A22E}
