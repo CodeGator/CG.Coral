@@ -2,7 +2,10 @@
 @inject TokenProvider TokenProvider
 
 <MudThemeProvider />
-@*<MudDialogProvider /> I get 2 of every dialog if I uncomment this *@
+<MudDialogProvider FullWidth="true"
+                   MaxWidth="MaxWidth.ExtraSmall"
+                   CloseButton="true"
+                   Position="DialogPosition.Center" />
 <MudSnackbarProvider />
 
 <MudLayout>
@@ -11,7 +14,7 @@
                        Color="Color.Inherit"
                        Edge="Edge.Start"
                        OnClick="@((e) => DrawerToggle())" />
-        <MudAppBarSpacer />
+        <MudSpacer />
         <AuthorizeView>
             <Authorized>
                 <MudButton Variant="Variant.Text" Color="Color.Inherit">
